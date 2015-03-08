@@ -1,0 +1,13 @@
+.container {
+	margin: 20px auto 0px auto;
+	width: 85%;
+
+	& .form-wrap{
+		width: 50%;	
+		margin: 0px auto;
+		
+		& .form-actions {
+			text-align: center;
+		}
+	}
+}

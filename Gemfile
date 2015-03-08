@@ -45,3 +45,4 @@ end
 
 gem 'foundation-rails'
 gem 'simple_form'
+gem 'devise'
