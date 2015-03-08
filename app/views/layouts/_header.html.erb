@@ -1,0 +1,37 @@
+<div class="sticky fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><%= link_to "Stukbook", root_path %></h1>
+      </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><a href="#">Timeline</a></li>
+        <li><a href="#">People</a></li>
+        <% if current_user %>
+        <li class="has-dropdown">
+          <a href="#"><%= current_user.username%></a>
+          <ul class="dropdown">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Friends</a></li>
+            <li><%= link_to "Settings", edit_user_registration_path %></li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          </ul>
+        </li>
+        <% else %>
+          <li><%= link_to "Login", new_user_session_path %></li>
+        <% end %>
+      </ul>
+
+      <!-- Left Nav Section -->
+      <!-- <ul class="left">
+        <li><a href="#">Left Nav Button</a></li>
+      </ul> -->
+    </section>
+  </nav>
+</div>

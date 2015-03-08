@@ -12,7 +12,8 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
+  <body class="f-topbar-fixed">
+    <%= render "layouts/header" %>
     <div class="container">
       <%= yield %>
     </div>
