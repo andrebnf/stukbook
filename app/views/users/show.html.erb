@@ -1,0 +1,14 @@
+<div class="row profile-info">
+	<div class="columns large-4">
+		<%= gravatar_tag @user.email, size: 200 %>
+	</div>
+	<div class="columns large-4">
+		<h3><%= @user.username %></h3>
+		<p>Age:</p>
+		<p>Gender:</p>
+	</div>
+	<div class="columns large-4">
+		<h3>Who am I</h3>
+		<small>Bio here</small>
+	</div>
+</div>

@@ -17,7 +17,7 @@
         <li class="has-dropdown">
           <a href="#"><%= gravatar_tag current_user.email, size: 20 %> <%= current_user.username%></a>
           <ul class="dropdown">
-            <li><a href="#">Profile</a></li>
+            <li><%= link_to "Profile", user_path(current_user.username) %></li>
             <li><a href="#">Friends</a></li>
             <li><%= link_to "Settings", edit_user_registration_path %></li>
             <li class="divider"></li>

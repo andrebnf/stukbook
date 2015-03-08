@@ -1,6 +1,6 @@
 .container {
 	margin: 20px auto 0px auto;
-	width: 85%;
+	width: 90%;
 
 	& .form-wrap{
 		width: 50%;	
@@ -17,4 +17,9 @@ nav.top-bar{
 
 .alert-box{
 	opacity: 0.9;
+}
+
+.profile-info {
+	background-color: #EEE;
+	padding: 50px 20px;
 }
